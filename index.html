@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="appContainer">
+      <h1>Trivia Quiz</h1>
+      <p class="score">Score = <span id="score">0</span> /10</p>
+
+      <div class="detailsDiv" id="detailsDiv">
+        <p class="difficulty">Difficulty: <span id="difficulty"></span></p>
+        <p class="genre">Genre: <span id="genre"></span></p>
+      </div>
+      <div class="questionDiv" id="questionDiv">
+        <p class="question">Question: <span id="question"></span></p>
+      </div>
+      <div class="answerDiv" id="answerDiv">
+        <button type="submit" class="btn1" id="btn1">Btn1</button>
+        <button type="submit" class="btn2" id="btn2">Btn2</button>
+        <button type="submit" class="btn3" id="btn3">Btn3</button>
+        <button type="submit" class="btn4" id="btn4">Btn4</button>
+      </div>
+
+      <div class="nextQuestionDiv" id="nextQuestionDiv">
+        <p>Correct Answer Was: <span id="correctAnswer"></span></p>
+        <button type="submit" class="nextQuestionBtn" id="nextQuestionBtn">
+          Get Next Question
+        </button>
+        <button type="submit" class="getQuestionSet" id="getQuestionSet">
+          Get question set
+        </button>
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

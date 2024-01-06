@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: black;
+  color: wheat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appContainer {
+  border: white 1px solid;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 1) ;
+  min-width: 350px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: green;
+  font-size: 3rem;
+  text-shadow: 2px 0px lightgreen;
+}
+.score {
+  font-size: 1.5rem;
+}
+.detailsDiv {
+  width: 96%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+.detailsDiv span {
+  color: white;
+  font-size: 1rem;
+}
+.questionDiv {
+  width: 96%;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.questionDiv span {
+  color: white;
+  font-size: 1.1rem;
+}
+.answerDiv {
+  width: 96%;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  row-gap: 20px;
+  justify-items: center;
+}
+button {
+  width: 150px;
+  font-size: 1.1rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(47, 79, 79);
+  color: wheat;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: rgba(47, 79, 79, 0.5);
+}
+.nextQuestionDiv {
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.nextQuestionDiv p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.nextQuestionDiv span {
+  font-size: 1rem;
+  color: white;
+}
+.nextQuestionDiv button {
+  width: 200px;
+  background-color: rgb(6, 6, 67);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.nextQuestionDiv button:hover {
+  background-color: rgb(46, 46, 222);
+}
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.wrong {
+  color: red;
+  font-weight: bold;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .appContainer {
+    max-width: 650px;
+  }
+}
