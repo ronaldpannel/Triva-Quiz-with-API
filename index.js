@@ -23,7 +23,7 @@ let answersArray = [];
 let correctAnswer;
 let index = 0;
 let score = 0;
-const maxQuestion = 3
+const maxQuestion = 9
 let questionCount = 0;
 
 const apiURL = `https://opentdb.com/api.php?amount=10&category=9&type=multiple`;
@@ -97,7 +97,6 @@ buttonEl1.addEventListener("click", () => {
     score++;
   } else {
     buttonEl1.classList.add("wrong");
-    score--;
   }
   correctAnswerEl.innerText = correctAnswer;
 });
@@ -108,7 +107,6 @@ buttonEl2.addEventListener("click", () => {
     score++;
   } else {
     buttonEl2.classList.add("wrong");
-    score--;
   }
   correctAnswerEl.innerText = correctAnswer;
 });
@@ -119,7 +117,6 @@ buttonEl3.addEventListener("click", () => {
     score++;
   } else {
     buttonEl3.classList.add("wrong");
-    score--;
   }
   correctAnswerEl.innerText = correctAnswer;
 });
@@ -130,7 +127,6 @@ buttonEl4.addEventListener("click", () => {
     score++;
   } else {
     buttonEl4.classList.add("wrong");
-    score--;
   }
   correctAnswerEl.innerText = correctAnswer;
 });

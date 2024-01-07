@@ -10,7 +10,7 @@
   <body>
     <div class="appContainer">
       <h1>Trivia Quiz</h1>
-      <p class="score">Score = <span id="score">0</span> /10</p>
+      <p class="score">Score = <span id="score">0</span> /8</p>
 
       <div class="detailsDiv" id="detailsDiv">
         <p class="difficulty">Difficulty: <span id="difficulty"></span></p>
@@ -34,11 +34,18 @@
         <button type="submit" class="getQuestionSet" id="getQuestionSet">
           Get question set
         </button>
+        <p class="instructions">
+          Click get question set button once> Then click get next question
+          button, them click your answer selection. Repeat until game over
+          screen appears
+        </p>
       </div>
       <div class="gameOverDisplay" id="gameOverDisplay">
-          <h1>Trivia Quiz</h1>
+        <h1>Trivia Quiz</h1>
         <h2>Game Over</h2>
-        <p class="finalScore">Your Score Was: <span id="finalScore">0</span></p>
+        <p class="finalScore">
+          Your Score Was: <span id="finalScore">0</span> / 8
+        </p>
 
         <button id="startGameBtn">Start Game</button>
       </div>
