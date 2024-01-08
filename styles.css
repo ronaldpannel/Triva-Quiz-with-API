@@ -34,6 +34,7 @@ h1 {
 }
 .detailsDiv {
   width: 96%;
+  max-width: 350;
   margin: 20px 0;
   display: flex;
   align-items: center;
@@ -124,9 +125,9 @@ button:hover {
 /* game over display */
 .gameOverDisplay {
   background-color: rgba(0, 0, 0, 1);
-  width: 85%;
-  height: 95%;
-  max-height: 550px;
+  width: 93%;
+  height: 98%;
+  max-height: 600px;
   position: absolute;
   display: none;
   flex-direction: column;

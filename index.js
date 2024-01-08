@@ -89,6 +89,7 @@ nextQuestionBtnEl.addEventListener("click", (e) => {
     gameOverDisplayEl.classList.add("visible");
     finalScoreEl.innerText = score
   }
+  getQuestionSetEl.disabled = true;
 });
 
 buttonEl1.addEventListener("click", () => {
